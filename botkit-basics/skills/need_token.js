@@ -1,9 +1,9 @@
 /* This module kicks in if no Botkit Studio token has been provided */
 
-module.exports = function(controller) {
+module.exports = function (controller) {
 
 
-  if (!process.env.studio_token) {
+  if (!process.env.studio_token ) {
 
     function conductOnboarding(bot, message) {
 
@@ -202,9 +202,9 @@ module.exports = function(controller) {
 
     });
 
-    controller.on('hello', conductOnboarding);
-    controller.on('welcome_back', conductOnboarding);
-    controller.on('message_received', unhandledMessage);
+    //controller.on('hello', conductOnboarding);
+    //controller.on('welcome_back', conductOnboarding);
+    //controller.on('message_received', unhandledMessage);
 
   }
 
